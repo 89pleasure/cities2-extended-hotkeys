@@ -219,12 +219,6 @@ const ExtendedHotkeysUI = ({ react }) => {
     const [expandReverseGroup, setExpandReverseGroup] = react.useState(false)
     useDataUpdate(react, 'extendedHotkeys.expandReverseGroup', setExpandReverseGroup);
 
-    /*const [enableSnappingWheel, setSnappingWheel] = react.useState(true);
-    useDataUpdate(react, 'extendedHotkeys.enableSnappingWheel', setSnappingWheel);*/
-
-    const [enableAnarchyMode, setEnableAnarchyMode] = react.useState(false)
-    useDataUpdate(react, 'extendedHotkeys.enableAnarchyMode', setEnableAnarchyMode)
-
     const [enableElevationReset, setEnableElevationReset] = react.useState(true)
     useDataUpdate(react, 'extendedHotkeys.enableElevationReset', setEnableElevationReset)
 
@@ -281,9 +275,6 @@ const ExtendedHotkeysUI = ({ react }) => {
     ]
 
     const staticHotkeysSettingsData = [
-        {
-            id: 11, label: translations['anarchyMode'], description: translations['anarchyMode.description'], isChecked: enableAnarchyMode, hotkey: 'ALT + A',
-        },
         {
             id: 4, label: translations['elevationReset'], description: translations['elevationReset.description'], isChecked: enableElevationReset, hotkey: 'POS1/END'
         },

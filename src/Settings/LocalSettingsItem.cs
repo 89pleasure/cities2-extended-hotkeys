@@ -19,7 +19,6 @@ namespace ExtendedHotkeys.Settings
         public bool EnableBrushSizeReverse { get; set; } = true;
         public bool EnableNetToolHotkeys { get; set; } = true;
         public bool EnableSnappingWheel { get; set; } = true;
-        public bool EnableAnarchyMode { get; set; } = true;
         public bool EnableElevationReset { get; set; } = true;
         public bool EnableElevationStepScroll { get; set; } = true;
         public bool ExpandReverseGroup { get; set; } = false;

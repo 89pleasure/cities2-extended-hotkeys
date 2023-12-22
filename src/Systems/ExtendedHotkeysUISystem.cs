@@ -37,7 +37,6 @@ namespace ExtendedHotkeys.Systems
                 { SettingKey.EnableSnappingWheel, () => m_Settings.EnableSnappingWheel = !m_Settings.EnableSnappingWheel },
                 { SettingKey.EnableElevationReset, () => m_Settings.EnableElevationReset = !m_Settings.EnableElevationReset },
                 { SettingKey.EnableElevationStepScroll, () => m_Settings.EnableElevationStepScroll = !m_Settings.EnableElevationStepScroll },
-                { SettingKey.EnableAnarchyMode, () => m_Settings.EnableAnarchyMode = !m_Settings.EnableAnarchyMode },
                 { SettingKey.EnableNTMGroup, () => m_Settings.EnableNTMGroup = !m_Settings.EnableNTMGroup },
                 { SettingKey.EnableNTMStraight, () => m_Settings.EnableNTMStraight = !m_Settings.EnableNTMStraight },
                 { SettingKey.EnableNTMSimpleCurve, () => m_Settings.EnableNTMSimpleCurve = !m_Settings.EnableNTMSimpleCurve },
@@ -73,9 +72,6 @@ namespace ExtendedHotkeys.Systems
                 { "reverseScroll.description", m_CustomTranslationSystem.GetTranslation("setting.reverseScroll.description", "Reverse scroll direction.") },
 
                 // HOTKEYS
-                { "anarchyMode", m_CustomTranslationSystem.GetTranslation("setting.anarchyMode", "Anarchy Mode") },
-                { "anarchyMode.description", m_CustomTranslationSystem.GetTranslation("setting.anarchyMode.description", "Toggle anarchy mode.") },
-
                 { "elevationReset", m_CustomTranslationSystem.GetTranslation("setting.elevationReset", "Elevation Reset") },
                 { "elevationReset.description", m_CustomTranslationSystem.GetTranslation("setting.elevationReset.description", "Resets elevation to ground floor.") },
 
@@ -109,7 +105,6 @@ namespace ExtendedHotkeys.Systems
             AddUpdateBinding(new GetterValueBinding<bool>(kGroup, "expandReverseGroup", () => m_Settings.ExpandReverseGroup));
 
             // Hotkeys
-            AddUpdateBinding(new GetterValueBinding<bool>(kGroup, "enableAnarchyMode", () => m_Settings.EnableAnarchyMode));
             AddUpdateBinding(new GetterValueBinding<bool>(kGroup, "enableElevationReset", () => m_Settings.EnableElevationReset));
             AddUpdateBinding(new GetterValueBinding<bool>(kGroup, "expandNTMGroup", () => m_Settings.ExpandNTMGroup));
             AddUpdateBinding(new GetterValueBinding<bool>(kGroup, "enableNTMGroup", () => m_Settings.EnableNTMGroup));

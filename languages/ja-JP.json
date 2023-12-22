@@ -10,8 +10,6 @@
   "extendedhotkeys.setting.brushStrength.description": "ブラシ強度を増減する。",
   "extendedhotkeys.setting.brushSize": "ブラシサイズ",
   "extendedhotkeys.setting.brushSize.description": "ブラシサイズを増減する。",
-  "extendedhotkeys.setting.anarchyMode": "アナーキー・モード",
-  "extendedhotkeys.setting.anarchyMode.description": "アナーキーモードを切り替える。",
   "extendedhotkeys.setting.reverseScroll": "スクロール方向逆",
   "extendedhotkeys.setting.reverseScroll.description": "マウスホイールのスクロール方向を変更します。",
   "extendedhotkeys.setting.elevationReset": "標高リセット",

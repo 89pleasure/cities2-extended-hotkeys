@@ -2068,8 +2068,6 @@
     use_data_update_default(react, "extendedHotkeys.enableBrushStrengthReverse", setEnableBrushStrengthReverse);
     const [expandReverseGroup, setExpandReverseGroup] = react.useState(false);
     use_data_update_default(react, "extendedHotkeys.expandReverseGroup", setExpandReverseGroup);
-    const [enableAnarchyMode, setEnableAnarchyMode] = react.useState(false);
-    use_data_update_default(react, "extendedHotkeys.enableAnarchyMode", setEnableAnarchyMode);
     const [enableElevationReset, setEnableElevationReset] = react.useState(true);
     use_data_update_default(react, "extendedHotkeys.enableElevationReset", setEnableElevationReset);
     const [enableElevationStepScroll, setEnableElevationStepScroll] = react.useState(true);
@@ -2134,13 +2132,6 @@
       }
     ];
     const staticHotkeysSettingsData = [
-      {
-        id: 11,
-        label: translations["anarchyMode"],
-        description: translations["anarchyMode.description"],
-        isChecked: enableAnarchyMode,
-        hotkey: "ALT + A"
-      },
       {
         id: 4,
         label: translations["elevationReset"],

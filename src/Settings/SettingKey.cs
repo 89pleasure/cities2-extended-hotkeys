@@ -14,7 +14,6 @@
         EnableNTMComplexCurve = 8,
         EnableNTMContinuous = 9,
         EnableNTMGrid = 10,
-        EnableAnarchyMode = 11,
         EnableElevationStepScroll = 12,
         EnableNetToolReverse = 13,
         EnableElevationReverse = 14,

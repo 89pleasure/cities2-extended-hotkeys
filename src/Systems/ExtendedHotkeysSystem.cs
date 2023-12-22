@@ -71,7 +71,7 @@ namespace ExtendedHotkeys.Systems
 
             // Add hotkeys
             CreateNetToolBindings();
-            CreateOpenToolWindowBindings();
+            // CreateOpenToolWindowBindings();
 
             // Add mouse wheels
             m_Wheels.Add(new NetToolWheel(m_ToolSystem, m_NetToolSystem, soundQuery, m_Settings));
@@ -128,9 +128,6 @@ namespace ExtendedHotkeys.Systems
 
             // Add bindings for elevation tool ALT + Right Mouse
             AddCombinedBinding(name: "UpdateElevationStep", modifier: "<keyboard>/leftAlt", binding: "<mouse>/rightButton", callback: OnElevationScroll);
-
-            // Add binding for anarchy mode ALT + A
-            AddCombinedBinding(name: "EnableAnarchyMode", modifier: "<keyboard>/leftAlt", binding: "<keyboard>/a", callback: EnableAnarchyModeAction);
         }
 
         private void CreateOpenToolWindowBindings()
@@ -256,18 +253,6 @@ namespace ExtendedHotkeys.Systems
             EntityQuery uxSoundQuery = GetEntityQuery(ComponentType.ReadOnly<ToolUXSoundSettingsData>());
             ToolUXSoundSettingsData soundSettingsData = uxSoundQuery.GetSingleton<ToolUXSoundSettingsData>();
             AudioManager.instance.PlayUISound(soundSettingsData.m_NetStartSound, 0.5f);
-        }
-
-        private void EnableAnarchyModeAction(InputAction.CallbackContext _)
-        {
-            if (!m_Settings.EnableAnarchyMode)
-                return;
-
-            m_ToolSystem.ignoreErrors = !m_ToolSystem.ignoreErrors;
-
-            EntityQuery uxSoundQuery = GetEntityQuery(ComponentType.ReadOnly<ToolUXSoundSettingsData>());
-            ToolUXSoundSettingsData soundSettingsData = uxSoundQuery.GetSingleton<ToolUXSoundSettingsData>();
-            AudioManager.instance.PlayUISound(soundSettingsData.m_AreaMarqueeEndSound, 0.5f);
         }
 
         private void OnElevationScroll(InputAction.CallbackContext _)

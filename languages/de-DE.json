@@ -10,8 +10,6 @@
   "extendedhotkeys.setting.brushStrength.description": "Erhöhen/Verringern der Pinselstärke.",
   "extendedhotkeys.setting.brushSize": "Pinselgröße",
   "extendedhotkeys.setting.brushSize.description": "Erhöhen/Verringern der Pinselgröße.",
-  "extendedhotkeys.setting.anarchyMode": "Anarchie-Modus",
-  "extendedhotkeys.setting.anarchyMode.description": "Anarchie-Modus umschalten.",
   "extendedhotkeys.setting.reverseScroll": "Scroll-Richtung umkehren",
   "extendedhotkeys.setting.reverseScroll.description": "Ändert die Scroll-Richtung deines Mausrads.",
   "extendedhotkeys.setting.elevationReset": "Höhe zurücksetzen",
