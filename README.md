@@ -4,10 +4,11 @@ Extends the default hotkeys of Cities Skylines II with some useful ones.
 For now you can't set them yourself. But this will be added later as a feature.
 
 ## Updates
-v0.5.0
+- v0.5.0
 	- Added brush wheel for terrain tools @fenrir200678
 	- Updated UI for reverse scroll options
-v0.4.0
+ - Removed anarchy hotkey due to mod replacement
+- v0.4.0
 	-Added wheel reverse options for net tool and elevation wheel
 	- Mouse right-click no longer aborts net tool placement while in elevation wheel mode
 - v0.3.0
