@@ -1,10 +1,10 @@
 {
   "name": "ExtendedHotkeys",
-  "version_number": "0.5.0",
+  "version_number": "0.5.1",
   "website_url": "https://github.com/89pleasure/cities2-extended-hotkeys",
   "description": "Adds practical mouse wheel functions and other hotkeys to make playing easier.",
   "dependencies": [
     "BepInEx-BepInExPack-5.4.2100",
-    "CaptainOfCoit-HookUI-0.3.5"
+    "Cities2Modding-HookUI-0.3.7"
   ]
 }
